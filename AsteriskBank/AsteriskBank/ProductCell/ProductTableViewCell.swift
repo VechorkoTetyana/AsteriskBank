@@ -10,9 +10,12 @@ import UIKit
 class ProductTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var background: UIView!
     @IBOutlet weak var produktImageView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var separatorView: UIView!
+
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -27,5 +30,29 @@ class ProductTableViewCell: UITableViewCell {
         
     }
     
-//    override class func awakeFromNib() {}
+    func setFirst() {
+      //  background.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        setCellCornerRadius([.layerMaxXMinYCorner, .layerMinXMinYCorner])
+
+    }
+    
+    func setLast() {
+     //   background.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+        setCellCornerRadius([.layerMinXMaxYCorner, .layerMaxXMaxYCorner])
+        separatorView.isHidden = true
+     //   separatorView.alpha = 0
+    }
+    
+    override func prepareForReuse() {
+        separatorView.isHidden = false
+        background.clipsToBounds = false
+    }
+    
+    private func setCellCornerRadius(_ corners: CACornerMask) {
+        background.clipsToBounds = true
+        background.layer.cornerRadius = 8
+        background.layer.maskedCorners = corners
+                
+    }
 }

@@ -24,7 +24,7 @@
                                 </segments>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RDH-a3-WPz">
-                                <rect key="frame" x="0.0" y="90" width="393" height="762"/>
+                                <rect key="frame" x="16" y="114" width="361" height="738"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -32,10 +32,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="RDH-a3-WPz" secondAttribute="bottom" id="0iU-KN-hkK"/>
-                            <constraint firstItem="RDH-a3-WPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8B0-yD-wkM"/>
                             <constraint firstItem="gRY-M8-VP1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8LT-U6-HwI"/>
-                            <constraint firstItem="RDH-a3-WPz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DZC-CD-Ck4"/>
-                            <constraint firstItem="RDH-a3-WPz" firstAttribute="top" secondItem="gRY-M8-VP1" secondAttribute="bottom" id="Ofi-rF-ZTM"/>
+                            <constraint firstItem="RDH-a3-WPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FZw-jI-oK7"/>
+                            <constraint firstItem="RDH-a3-WPz" firstAttribute="top" secondItem="gRY-M8-VP1" secondAttribute="bottom" constant="24" id="Ofi-rF-ZTM"/>
+                            <constraint firstItem="RDH-a3-WPz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="e5e-mx-P2U"/>
                             <constraint firstItem="gRY-M8-VP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0y-5S-Qxh"/>
                         </constraints>
                     </view>
