@@ -7,16 +7,6 @@
 
 import UIKit
 
-struct ProductCategoryViewModel {
-    let title: String
-    let products: [ProductViewModel]
-    
-    init(title: String, products: [ProductViewModel]) {
-        self.title = title
-        self.products = products
-    }
-}
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -27,7 +17,8 @@ class ViewController: UIViewController {
     private var categories: [ProductCategoryViewModel] = []
     private var currentCategoryIndex: Int = 0
     private var currentCategory: ProductCategoryViewModel {
-        categories[currentCategoryIndex]
+        return categories[currentCategoryIndex]
+        
     }
     
     private var loader = ProductsLoader()
@@ -36,7 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         categories = provideCategories()
         
-        configureTableViuew()
+        configureTableView()
         configureSegmentedControl()
     }
     func configureSegmentedControl() {
@@ -50,7 +41,7 @@ class ViewController: UIViewController {
         }
         segmentedControl.selectedSegmentIndex = 0
     }
-    func configureTableViuew () {
+    func configureTableView () {
         tableView.separatorColor = .clear
         tableView.dataSource = self
  //     tableView.delegate = self
