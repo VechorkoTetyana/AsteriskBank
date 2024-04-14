@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -16,7 +19,9 @@ class ViewController: UIViewController {
 
     private var categories: [ProductCategoryViewModel] = []
     private var currentCategoryIndex: Int = 0
-    private var currentCategory: ProductCategoryViewModel {
+    
+    var currentCategory: ProductCategoryViewModel? {
+        guard currentCategoryIndex < categories.count else {return nil}
         return categories[currentCategoryIndex]
         
     }
@@ -81,10 +86,12 @@ extension ViewController: UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
  //       return debitProducts.count
-        return currentCategory.products.count
+        return currentCategory?.products.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let currentCategory else { return UITableViewCell() }
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as? ProductTableViewCell {
             
   //          let products = currentCategory.products
