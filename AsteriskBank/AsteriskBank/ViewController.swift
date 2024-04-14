@@ -20,11 +20,15 @@ class ViewController: UIViewController {
     private var categories: [ProductCategoryViewModel] = []
     private var currentCategoryIndex: Int = 0
     
-    var currentCategory: ProductCategoryViewModel? {
+    private var currentCategory: ProductCategoryViewModel {
+        categories[currentCategoryIndex]
+    }
+   /* var currentCategory: ProductCategoryViewModel? {
         guard currentCategoryIndex < categories.count else {return nil}
         return categories[currentCategoryIndex]
         
     }
+    */
     
     private var loader = ProductsLoader()
     
@@ -45,7 +49,16 @@ class ViewController: UIViewController {
                 animated: false)
         }
         segmentedControl.selectedSegmentIndex = 0
+        
+        segmentedControl.addTarget(self, action: #selector(onSegmentControlIndexChanged), for: .valueChanged)
     }
+    
+    @objc
+    private func onSegmentControlIndexChanged() {
+        currentCategoryIndex = segmentedControl.selectedSegmentIndex
+        
+    }
+    
     func configureTableView () {
         tableView.separatorColor = .clear
         tableView.dataSource = self
@@ -86,11 +99,13 @@ extension ViewController: UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
  //       return debitProducts.count
-        return currentCategory?.products.count ?? 0
+ //PHIL   return currentCategory?.products.count ?? 0
+        return currentCategory.products.count
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let currentCategory else { return UITableViewCell() }
+ //PHIL       guard let currentCategory else { return UITableViewCell() }
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as? ProductTableViewCell {
             
