@@ -7,33 +7,59 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
-    let produktCategories: [String] = ["Debit", "Deposit", "Credit", "Loan"]
-    var debitProducts: [ProductViewModel] = []
+//    let produktCategories: [String] = ["Debit", "Deposit", "Credit", "Loan"]
+
+    private var categories: [ProductCategoryViewModel] = []
+    private var currentCategoryIndex: Int = 0
     
-    var loader = ProductsLoader()
+    private var currentCategory: ProductCategoryViewModel {
+        categories[currentCategoryIndex]
+    }
+   /* var currentCategory: ProductCategoryViewModel? {
+        guard currentCategoryIndex < categories.count else {return nil}
+        return categories[currentCategoryIndex]
+        
+    }
+    */
     
+    private var loader = ProductsLoader()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        debitProducts = provideProducts()
+        categories = provideCategories()
         
-        configureTableViuew()
+        configureTableView()
         configureSegmentedControl()
     }
     func configureSegmentedControl() {
         segmentedControl.removeAllSegments()
         
-        for (index, category) in produktCategories.enumerated() {
-            segmentedControl.insertSegment(withTitle: category, at: index, animated: false)
+        for (index, category) in categories.enumerated() {
+            segmentedControl.insertSegment(
+                withTitle: category.title,
+                at: index,
+                animated: false)
         }
         segmentedControl.selectedSegmentIndex = 0
+        
+        segmentedControl.addTarget(self, action: #selector(onSegmentControlIndexChanged), for: .valueChanged)
     }
-    func configureTableViuew () {
+    
+    @objc
+    private func onSegmentControlIndexChanged() {
+        currentCategoryIndex = segmentedControl.selectedSegmentIndex
+        tableView.reloadData()
+    }
+    
+    func configureTableView () {
         tableView.separatorColor = .clear
         tableView.dataSource = self
  //     tableView.delegate = self
@@ -41,85 +67,74 @@ class ViewController: UIViewController {
         
     }
     
-    func provideProducts() -> [ProductViewModel] {
+   private func provideCategories() -> [ProductCategoryViewModel] {
+        let products = loader.load()
         
+        let productCategories: [String] = ["Debit", "Deposit", "Credit", "Loan"]
+       
+/*        let result = produktCategories.map { string in
+           Category(title:string)
+           
+       }*/
         
+        var categories: [String: [ProductViewModel]] = [:]
         
- //       var debitProducts: [ProductViewModel] = []
- //       let debitCategory = "Debit"
- //       debitProducts.append()
-
+        for category in productCategories {
+            categories[category] = []
+        }
         
-   /*     debitProducts.append(
-            ProductViewModel(
-                title: "Digital Debit Card",
-                description: "Description",
-                imageName: "blackCard",
-                category: debitCategory
-            )
-        )
+        for product in products {
+        /*      if categories [product.category] == nil {
+                categories[product.category] = []
+            }*/
+//          let title = product.category.capitalized
+            
+            categories[product.categoryTitle]?.append(product)
+        }
         
-        debitProducts.append(
-            ProductViewModel(
-                title: "Card name Airlines",
-                description: "Debit card for travelers. Pay with miles for flights and train tickets",
-                imageName: "blueCard",
-                category: debitCategory
-            )
-        )
+/*        var result = [ProductCategoryViewModel] ()
         
-        debitProducts.append(
-            ProductViewModel(
-                title: "Card name WWF",
-                description: "A debit card for those who care about nature. Interest on purchases is transferred to the WWF",
-                imageName: "wefCard",
-                category: debitCategory
-            )
-        )
+        for (categoryKey, products) in categories {
+            result.append(ProductCategoryViewModel(
+                title: categoryKey,
+                products: products
+            ))
+        }*/
         
-        debitProducts.append(
-            ProductViewModel(
-                title: "Card name Games",
-                description: "Get free games and gadgets from using the card",
-                imageName: "kidsCard",
-                category: debitCategory
-            )
-        )
-        
-        debitProducts.append(
-            ProductViewModel(
-                title: "Card name Junior",
-                description: "A card for a child linked to a parent's account",
-                imageName: "petCard",
-                category: debitCategory
-            )
-        )
-    */
-        
-        return loader.load()
+       return productCategories.compactMap {
+//         categories[$0].products
+           guard let products = categories[$0] else { return nil }
+           return ProductCategoryViewModel(title: $0, products: products)
+       }
     }
 }
 
-extension ViewController: UITableViewDataSource
-{
+extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return debitProducts.count
+ //       return debitProducts.count
+ //PHIL   return currentCategory?.products.count ?? 0
+        return currentCategory.products.count
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+ //PHIL       guard let currentCategory else { return UITableViewCell() }
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as? ProductTableViewCell {
             
-            let product = debitProducts[indexPath.row]
+  //          let products = currentCategory.products
+            
+            let product = currentCategory.products[indexPath.row]
             cell.configure(viewModel: product)
             
             if indexPath.row == 0 {
                 cell.setFirst()
             }
             
-            if indexPath.row == debitProducts.count - 1 {
+            if indexPath.row == currentCategory.products.count - 1 {
                 cell.setLast()
             }
             

@@ -16,8 +16,9 @@
 		B8AB0BC92BB3A73000588FC1 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BC82BB3A73000588FC1 /* ProductTableViewCell.xib */; };
 		B8AB0BCB2BB3A78300588FC1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */; };
 		B8AB0BCD2BB3B90300588FC1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */; };
-		B8AB0BCF2BBB036000588FC1 /* produkts.json in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BCE2BBB036000588FC1 /* produkts.json */; };
 		B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */; };
+		B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BD22BC3EE4400588FC1 /* products.json */; };
+		B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		B8AB0BC82BB3A73000588FC1 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
-		B8AB0BCE2BBB036000588FC1 /* produkts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = produkts.json; sourceTree = "<group>"; };
 		B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsLoader.swift; sourceTree = "<group>"; };
+		B8AB0BD22BC3EE4400588FC1 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +68,11 @@
 		B8AB0BB12BB34E9E00588FC1 /* AsteriskBank */ = {
 			isa = PBXGroup;
 			children = (
-				B8AB0BCE2BBB036000588FC1 /* produkts.json */,
+				B8FAEFF82BC7EE5C00AC04DB /* Model */,
+				B8AB0BD22BC3EE4400588FC1 /* products.json */,
 				B8AB0BC62BB3A61F00588FC1 /* ProductCell */,
 				B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */,
 				B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */,
-				B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */,
 				B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */,
 				B8AB0BB82BB34E9E00588FC1 /* Main.storyboard */,
 				B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */,
@@ -88,6 +90,15 @@
 				B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */,
 			);
 			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		B8FAEFF82BC7EE5C00AC04DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */,
+				B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AB0BBC2BB34EA000588FC1 /* Assets.xcassets in Resources */,
-				B8AB0BCF2BBB036000588FC1 /* produkts.json in Resources */,
 				B8AB0BC92BB3A73000588FC1 /* ProductTableViewCell.xib in Resources */,
+				B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */,
 				B8AB0BBF2BB34EA000588FC1 /* Base in Resources */,
 				B8AB0BBA2BB34E9E00588FC1 /* Base in Resources */,
 			);
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */,
+				B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */,
 				B8AB0BCB2BB3A78300588FC1 /* ProductTableViewCell.swift in Sources */,
 				B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */,
 				B8AB0BB32BB34E9E00588FC1 /* AppDelegate.swift in Sources */,
