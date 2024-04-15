@@ -20,3 +20,9 @@ struct ProductViewModel: Codable {
         self.category = category
     }
 }
+
+extension ProductViewModel {
+    var categoryTitle: String {
+        category.capitalized
+    }
+}

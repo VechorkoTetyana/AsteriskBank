@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     @objc
     private func onSegmentControlIndexChanged() {
         currentCategoryIndex = segmentedControl.selectedSegmentIndex
-        
+        tableView.reloadData()
     }
     
     func configureTableView () {
@@ -67,33 +67,49 @@ class ViewController: UIViewController {
         
     }
     
-    func provideCategories() -> [ProductCategoryViewModel] {
+   private func provideCategories() -> [ProductCategoryViewModel] {
         let products = loader.load()
+        
+        let productCategories: [String] = ["Debit", "Deposit", "Credit", "Loan"]
+       
+/*        let result = produktCategories.map { string in
+           Category(title:string)
+           
+       }*/
         
         var categories: [String: [ProductViewModel]] = [:]
         
-        for product in products {
-            if categories [product.category] == nil {
-                categories[product.category] = []
-            }
-            categories[product.category]?.append(product)
+        for category in productCategories {
+            categories[category] = []
         }
         
-        var result = [ProductCategoryViewModel] ()
+        for product in products {
+        /*      if categories [product.category] == nil {
+                categories[product.category] = []
+            }*/
+//          let title = product.category.capitalized
+            
+            categories[product.categoryTitle]?.append(product)
+        }
+        
+/*        var result = [ProductCategoryViewModel] ()
         
         for (categoryKey, products) in categories {
             result.append(ProductCategoryViewModel(
-                title: categoryKey.capitalized,
+                title: categoryKey,
                 products: products
             ))
-        }
+        }*/
         
-        return result
+       return productCategories.compactMap {
+//         categories[$0].products
+           guard let products = categories[$0] else { return nil }
+           return ProductCategoryViewModel(title: $0, products: products)
+       }
     }
 }
 
-extension ViewController: UITableViewDataSource
-{
+extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
