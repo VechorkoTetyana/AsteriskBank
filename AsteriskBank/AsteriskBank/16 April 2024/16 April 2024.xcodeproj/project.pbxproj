@@ -7,41 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8AB0BB32BB34E9E00588FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */; };
-		B8AB0BB52BB34E9E00588FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */; };
-		B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */; };
-		B8AB0BBA2BB34E9E00588FC1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BB92BB34E9E00588FC1 /* Base */; };
-		B8AB0BBC2BB34EA000588FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */; };
-		B8AB0BBF2BB34EA000588FC1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BBE2BB34EA000588FC1 /* Base */; };
-		B8AB0BC92BB3A73000588FC1 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BC82BB3A73000588FC1 /* ProductTableViewCell.xib */; };
-		B8AB0BCB2BB3A78300588FC1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */; };
-		B8AB0BCD2BB3B90300588FC1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */; };
-		B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */; };
-		B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BD22BC3EE4400588FC1 /* products.json */; };
-		B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */; };
-		B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */; };
+		B8FAF00A2BCE950F00AC04DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAF0092BCE950F00AC04DB /* AppDelegate.swift */; };
+		B8FAF00C2BCE950F00AC04DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAF00B2BCE950F00AC04DB /* SceneDelegate.swift */; };
+		B8FAF00E2BCE950F00AC04DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAF00D2BCE950F00AC04DB /* ViewController.swift */; };
+		B8FAF0112BCE950F00AC04DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0102BCE950F00AC04DB /* Base */; };
+		B8FAF0132BCE951000AC04DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0122BCE951000AC04DB /* Assets.xcassets */; };
+		B8FAF0162BCE951000AC04DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0152BCE951000AC04DB /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8AB0BAF2BB34E9E00588FC1 /* AsteriskBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsteriskBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B8AB0BB92BB34E9E00588FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8AB0BBE2BB34EA000588FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B8AB0BC02BB34EA000588FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8AB0BC82BB3A73000588FC1 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
-		B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
-		B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsLoader.swift; sourceTree = "<group>"; };
-		B8AB0BD22BC3EE4400588FC1 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
-		B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryViewModel.swift; sourceTree = "<group>"; };
-		B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneredView.swift; sourceTree = "<group>"; };
+		B8FAF0062BCE950F00AC04DB /* 16 April 2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16 April 2024.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FAF0092BCE950F00AC04DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8FAF00B2BCE950F00AC04DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8FAF00D2BCE950F00AC04DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8FAF0102BCE950F00AC04DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8FAF0122BCE951000AC04DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8FAF0152BCE951000AC04DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8FAF0172BCE951000AC04DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B8AB0BAC2BB34E9E00588FC1 /* Frameworks */ = {
+		B8FAF0032BCE950F00AC04DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,95 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8AB0BA62BB34E9E00588FC1 = {
+		B8FAEFFD2BCE950F00AC04DB = {
 			isa = PBXGroup;
 			children = (
-				B8AB0BB12BB34E9E00588FC1 /* AsteriskBank */,
-				B8AB0BB02BB34E9E00588FC1 /* Products */,
+				B8FAF0082BCE950F00AC04DB /* 16 April 2024 */,
+				B8FAF0072BCE950F00AC04DB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B8AB0BB02BB34E9E00588FC1 /* Products */ = {
+		B8FAF0072BCE950F00AC04DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8AB0BAF2BB34E9E00588FC1 /* AsteriskBank.app */,
+				B8FAF0062BCE950F00AC04DB /* 16 April 2024.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8AB0BB12BB34E9E00588FC1 /* AsteriskBank */ = {
+		B8FAF0082BCE950F00AC04DB /* 16 April 2024 */ = {
 			isa = PBXGroup;
 			children = (
-				B8FAEFF82BC7EE5C00AC04DB /* Model */,
-				B8AB0BD22BC3EE4400588FC1 /* products.json */,
-				B8AB0BC62BB3A61F00588FC1 /* ProductCell */,
-				B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */,
-				B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */,
-				B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */,
-				B8AB0BB82BB34E9E00588FC1 /* Main.storyboard */,
-				B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */,
-				B8AB0BBD2BB34EA000588FC1 /* LaunchScreen.storyboard */,
-				B8AB0BC02BB34EA000588FC1 /* Info.plist */,
-				B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */,
-				B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */,
+				B8FAF0092BCE950F00AC04DB /* AppDelegate.swift */,
+				B8FAF00B2BCE950F00AC04DB /* SceneDelegate.swift */,
+				B8FAF00D2BCE950F00AC04DB /* ViewController.swift */,
+				B8FAF00F2BCE950F00AC04DB /* Main.storyboard */,
+				B8FAF0122BCE951000AC04DB /* Assets.xcassets */,
+				B8FAF0142BCE951000AC04DB /* LaunchScreen.storyboard */,
+				B8FAF0172BCE951000AC04DB /* Info.plist */,
 			);
-			path = AsteriskBank;
-			sourceTree = "<group>";
-		};
-		B8AB0BC62BB3A61F00588FC1 /* ProductCell */ = {
-			isa = PBXGroup;
-			children = (
-				B8AB0BC82BB3A73000588FC1 /* ProductTableViewCell.xib */,
-				B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */,
-			);
-			path = ProductCell;
-			sourceTree = "<group>";
-		};
-		B8FAEFF82BC7EE5C00AC04DB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */,
-				B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */,
-			);
-			path = Model;
+			path = "16 April 2024";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8AB0BAE2BB34E9E00588FC1 /* AsteriskBank */ = {
+		B8FAF0052BCE950F00AC04DB /* 16 April 2024 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8AB0BC32BB34EA000588FC1 /* Build configuration list for PBXNativeTarget "AsteriskBank" */;
+			buildConfigurationList = B8FAF01A2BCE951000AC04DB /* Build configuration list for PBXNativeTarget "16 April 2024" */;
 			buildPhases = (
-				B8AB0BAB2BB34E9E00588FC1 /* Sources */,
-				B8AB0BAC2BB34E9E00588FC1 /* Frameworks */,
-				B8AB0BAD2BB34E9E00588FC1 /* Resources */,
+				B8FAF0022BCE950F00AC04DB /* Sources */,
+				B8FAF0032BCE950F00AC04DB /* Frameworks */,
+				B8FAF0042BCE950F00AC04DB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AsteriskBank;
-			productName = AsteriskBank;
-			productReference = B8AB0BAF2BB34E9E00588FC1 /* AsteriskBank.app */;
+			name = "16 April 2024";
+			productName = "16 April 2024";
+			productReference = B8FAF0062BCE950F00AC04DB /* 16 April 2024.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B8AB0BA72BB34E9E00588FC1 /* Project object */ = {
+		B8FAEFFE2BCE950F00AC04DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					B8AB0BAE2BB34E9E00588FC1 = {
+					B8FAF0052BCE950F00AC04DB = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = B8AB0BAA2BB34E9E00588FC1 /* Build configuration list for PBXProject "AsteriskBank" */;
+			buildConfigurationList = B8FAF0012BCE950F00AC04DB /* Build configuration list for PBXProject "16 April 2024" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,62 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = B8AB0BA62BB34E9E00588FC1;
-			productRefGroup = B8AB0BB02BB34E9E00588FC1 /* Products */;
+			mainGroup = B8FAEFFD2BCE950F00AC04DB;
+			productRefGroup = B8FAF0072BCE950F00AC04DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8AB0BAE2BB34E9E00588FC1 /* AsteriskBank */,
+				B8FAF0052BCE950F00AC04DB /* 16 April 2024 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B8AB0BAD2BB34E9E00588FC1 /* Resources */ = {
+		B8FAF0042BCE950F00AC04DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8AB0BBC2BB34EA000588FC1 /* Assets.xcassets in Resources */,
-				B8AB0BC92BB3A73000588FC1 /* ProductTableViewCell.xib in Resources */,
-				B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */,
-				B8AB0BBF2BB34EA000588FC1 /* Base in Resources */,
-				B8AB0BBA2BB34E9E00588FC1 /* Base in Resources */,
+				B8FAF0132BCE951000AC04DB /* Assets.xcassets in Resources */,
+				B8FAF0162BCE951000AC04DB /* Base in Resources */,
+				B8FAF0112BCE950F00AC04DB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B8AB0BAB2BB34E9E00588FC1 /* Sources */ = {
+		B8FAF0022BCE950F00AC04DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */,
-				B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */,
-				B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */,
-				B8AB0BCB2BB3A78300588FC1 /* ProductTableViewCell.swift in Sources */,
-				B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */,
-				B8AB0BB32BB34E9E00588FC1 /* AppDelegate.swift in Sources */,
-				B8AB0BB52BB34E9E00588FC1 /* SceneDelegate.swift in Sources */,
-				B8AB0BCD2BB3B90300588FC1 /* ProductViewModel.swift in Sources */,
+				B8FAF00E2BCE950F00AC04DB /* ViewController.swift in Sources */,
+				B8FAF00A2BCE950F00AC04DB /* AppDelegate.swift in Sources */,
+				B8FAF00C2BCE950F00AC04DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8AB0BB82BB34E9E00588FC1 /* Main.storyboard */ = {
+		B8FAF00F2BCE950F00AC04DB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8AB0BB92BB34E9E00588FC1 /* Base */,
+				B8FAF0102BCE950F00AC04DB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B8AB0BBD2BB34EA000588FC1 /* LaunchScreen.storyboard */ = {
+		B8FAF0142BCE951000AC04DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8AB0BBE2BB34EA000588FC1 /* Base */,
+				B8FAF0152BCE951000AC04DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -210,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B8AB0BC12BB34EA000588FC1 /* Debug */ = {
+		B8FAF0182BCE951000AC04DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		B8AB0BC22BB34EA000588FC1 /* Release */ = {
+		B8FAF0192BCE951000AC04DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -329,7 +285,7 @@
 			};
 			name = Release;
 		};
-		B8AB0BC42BB34EA000588FC1 /* Debug */ = {
+		B8FAF01B2BCE951000AC04DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -337,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AsteriskBank/Info.plist;
+				INFOPLIST_FILE = "16 April 2024/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -348,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tvechorkofedora.AsteriskBank;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tvechorkofedora.-6-April-2024";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		B8AB0BC52BB34EA000588FC1 /* Release */ = {
+		B8FAF01C2BCE951000AC04DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -364,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AsteriskBank/Info.plist;
+				INFOPLIST_FILE = "16 April 2024/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -375,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tvechorkofedora.AsteriskBank;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tvechorkofedora.-6-April-2024";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,25 +342,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8AB0BAA2BB34E9E00588FC1 /* Build configuration list for PBXProject "AsteriskBank" */ = {
+		B8FAF0012BCE950F00AC04DB /* Build configuration list for PBXProject "16 April 2024" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8AB0BC12BB34EA000588FC1 /* Debug */,
-				B8AB0BC22BB34EA000588FC1 /* Release */,
+				B8FAF0182BCE951000AC04DB /* Debug */,
+				B8FAF0192BCE951000AC04DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8AB0BC32BB34EA000588FC1 /* Build configuration list for PBXNativeTarget "AsteriskBank" */ = {
+		B8FAF01A2BCE951000AC04DB /* Build configuration list for PBXNativeTarget "16 April 2024" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8AB0BC42BB34EA000588FC1 /* Debug */,
-				B8AB0BC52BB34EA000588FC1 /* Release */,
+				B8FAF01B2BCE951000AC04DB /* Debug */,
+				B8FAF01C2BCE951000AC04DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B8AB0BA72BB34E9E00588FC1 /* Project object */;
+	rootObject = B8FAEFFE2BCE950F00AC04DB /* Project object */;
 }
