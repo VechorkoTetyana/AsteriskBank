@@ -20,6 +20,12 @@
 		B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BD22BC3EE4400588FC1 /* products.json */; };
 		B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */; };
 		B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */; };
+		B8FAF0242BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF01F2BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf */; };
+		B8FAF0252BCF19F100AC04DB /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0202BCF19F100AC04DB /* SpaceGrotesk-SemiBold.ttf */; };
+		B8FAF0262BCF19F100AC04DB /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0212BCF19F100AC04DB /* SpaceGrotesk-Light.ttf */; };
+		B8FAF0272BCF19F100AC04DB /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0222BCF19F100AC04DB /* SpaceGrotesk-Regular.ttf */; };
+		B8FAF0282BCF19F100AC04DB /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF0232BCF19F100AC04DB /* SpaceGrotesk-Medium.ttf */; };
+		B8FAF02A2BCF245500AC04DB /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAF0292BCF245500AC04DB /* ProductDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		B8AB0BD22BC3EE4400588FC1 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryViewModel.swift; sourceTree = "<group>"; };
 		B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneredView.swift; sourceTree = "<group>"; };
+		B8FAF01F2BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-Bold.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		B8FAF0202BCF19F100AC04DB /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-SemiBold.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		B8FAF0212BCF19F100AC04DB /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-Light.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
+		B8FAF0222BCF19F100AC04DB /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-Regular.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		B8FAF0232BCF19F100AC04DB /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-Medium.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		B8FAF0292BCF245500AC04DB /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,8 @@
 		B8AB0BB12BB34E9E00588FC1 /* AsteriskBank */ = {
 			isa = PBXGroup;
 			children = (
+				B8AB0BC02BB34EA000588FC1 /* Info.plist */,
+				B8FAF01D2BCF194400AC04DB /* Resources */,
 				B8FAEFF82BC7EE5C00AC04DB /* Model */,
 				B8AB0BD22BC3EE4400588FC1 /* products.json */,
 				B8AB0BC62BB3A61F00588FC1 /* ProductCell */,
@@ -77,11 +91,10 @@
 				B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */,
 				B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */,
 				B8AB0BB82BB34E9E00588FC1 /* Main.storyboard */,
-				B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */,
 				B8AB0BBD2BB34EA000588FC1 /* LaunchScreen.storyboard */,
-				B8AB0BC02BB34EA000588FC1 /* Info.plist */,
 				B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */,
 				B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */,
+				B8FAF0292BCF245500AC04DB /* ProductDetailsVC.swift */,
 			);
 			path = AsteriskBank;
 			sourceTree = "<group>";
@@ -102,6 +115,27 @@
 				B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B8FAF01D2BCF194400AC04DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAF01E2BCF197F00AC04DB /* Fonts */,
+				B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8FAF01E2BCF197F00AC04DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAF01F2BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf */,
+				B8FAF0212BCF19F100AC04DB /* SpaceGrotesk-Light.ttf */,
+				B8FAF0232BCF19F100AC04DB /* SpaceGrotesk-Medium.ttf */,
+				B8FAF0222BCF19F100AC04DB /* SpaceGrotesk-Regular.ttf */,
+				B8FAF0202BCF19F100AC04DB /* SpaceGrotesk-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FAF0282BCF19F100AC04DB /* SpaceGrotesk-Medium.ttf in Resources */,
+				B8FAF0242BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf in Resources */,
 				B8AB0BBC2BB34EA000588FC1 /* Assets.xcassets in Resources */,
+				B8FAF0272BCF19F100AC04DB /* SpaceGrotesk-Regular.ttf in Resources */,
+				B8FAF0262BCF19F100AC04DB /* SpaceGrotesk-Light.ttf in Resources */,
 				B8AB0BC92BB3A73000588FC1 /* ProductTableViewCell.xib in Resources */,
 				B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */,
 				B8AB0BBF2BB34EA000588FC1 /* Base in Resources */,
+				B8FAF0252BCF19F100AC04DB /* SpaceGrotesk-SemiBold.ttf in Resources */,
 				B8AB0BBA2BB34E9E00588FC1 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +218,7 @@
 			files = (
 				B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */,
 				B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */,
+				B8FAF02A2BCF245500AC04DB /* ProductDetailsVC.swift in Sources */,
 				B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */,
 				B8AB0BCB2BB3A78300588FC1 /* ProductTableViewCell.swift in Sources */,
 				B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */,

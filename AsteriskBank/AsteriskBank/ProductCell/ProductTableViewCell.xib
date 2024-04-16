@@ -37,18 +37,25 @@
                         <constraint firstAttribute="width" constant="64" id="fMm-C4-orq"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Digital Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFc-vX-zaw">
-                    <rect key="frame" x="96" y="16" width="134" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFc-vX-zaw">
+                    <rect key="frame" x="96" y="16" width="134" height="24.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description Description Description Description Description Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-4d-M1D">
-                    <rect key="frame" x="96" y="41" width="281" height="31.333333333333329"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description Description Description Description Description Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-4d-M1D">
+                    <rect key="frame" x="96" y="44.666666666666657" width="281" height="57.333333333333343"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="GV5-0S-6eh">
+                    <rect key="frame" x="353" y="16" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="hVM-Ec-d0H"/>
+                        <constraint firstAttribute="width" constant="24" id="nhC-Sf-aok"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -60,9 +67,12 @@
                 <constraint firstAttribute="bottom" secondItem="wfO-bv-yN6" secondAttribute="bottom" id="VnF-7B-OSn"/>
                 <constraint firstItem="n04-WE-ucb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="WSf-lh-VkB"/>
                 <constraint firstItem="J9U-4d-M1D" firstAttribute="top" secondItem="TFc-vX-zaw" secondAttribute="bottom" constant="4" id="bOo-bq-SYT"/>
+                <constraint firstItem="J9U-4d-M1D" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="fGW-e7-w8U"/>
+                <constraint firstItem="GV5-0S-6eh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="g3t-9I-9h4"/>
                 <constraint firstItem="n04-WE-ucb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kOY-z8-GJh"/>
                 <constraint firstItem="wfO-bv-yN6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oH4-Gn-wWp"/>
                 <constraint firstItem="TFc-vX-zaw" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="rzs-Qv-cAP"/>
+                <constraint firstAttribute="trailing" secondItem="GV5-0S-6eh" secondAttribute="trailing" constant="16" id="uGD-A5-tN5"/>
                 <constraint firstItem="wfO-bv-yN6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wdq-QF-kjN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -78,6 +88,7 @@
     </objects>
     <resources>
         <image name="blackCard" width="64" height="45"/>
+        <image name="chevron_right" width="24" height="24"/>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
