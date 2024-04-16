@@ -11,7 +11,7 @@
         <!--Application-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Application" id="BYZ-38-t0r" customClass="ViewController" customModule="AsteriskBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Application" id="BYZ-38-t0r" customClass="ProductsVC" customModule="AsteriskBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="segmentedControl" destination="gRY-M8-VP1" id="gwA-SO-ogg"/>
                         <outlet property="tableView" destination="RDH-a3-WPz" id="W4M-ki-8Nk"/>
+                        <segue destination="9T1-xg-ZE9" kind="show" identifier="Details" id="1Iz-Ko-0va"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -51,13 +52,13 @@
         <!--Product DetailsVC-->
         <scene sceneID="gdt-Dr-ugp">
             <objects>
-                <viewController id="9T1-xg-ZE9" customClass="ProductDetailsVC" customModule="AsteriskBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailsVC" id="9T1-xg-ZE9" customClass="ProductDetailsVC" customModule="AsteriskBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXw-FW-Iih">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lV1-P3-C9n">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xy8-dC-G1p">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="863"/>
@@ -350,8 +351,10 @@
                             <constraint firstItem="lV1-P3-C9n" firstAttribute="top" secondItem="IXw-FW-Iih" secondAttribute="top" id="xej-KJ-L26"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="91u-0n-eNj"/>
                     <connections>
                         <outlet property="titleLbl" destination="RQ4-Jj-2iC" id="k2C-hB-ezC"/>
+                        <outlet property="view" destination="Xy8-dC-G1p" id="GVQ-GG-KWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXF-2v-m2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
