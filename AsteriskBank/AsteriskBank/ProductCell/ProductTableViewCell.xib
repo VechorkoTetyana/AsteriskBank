@@ -22,10 +22,19 @@
                                 <constraint firstAttribute="height" constant="1" id="QaO-9L-L2S"/>
                             </constraints>
                         </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="GV5-0S-6eh">
+                            <rect key="frame" x="353" y="32" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="hVM-Ec-d0H"/>
+                                <constraint firstAttribute="width" constant="24" id="nhC-Sf-aok"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="gEA-nH-hFQ" secondAttribute="bottom" id="Lg0-qi-fJl"/>
+                        <constraint firstAttribute="trailing" secondItem="GV5-0S-6eh" secondAttribute="trailing" constant="16" id="WGd-Cb-eaT"/>
+                        <constraint firstItem="GV5-0S-6eh" firstAttribute="top" secondItem="wfO-bv-yN6" secondAttribute="top" constant="32" id="jL8-k3-Slk"/>
                         <constraint firstItem="gEA-nH-hFQ" firstAttribute="leading" secondItem="wfO-bv-yN6" secondAttribute="leading" constant="16" id="q2d-0p-9Hs"/>
                         <constraint firstAttribute="trailing" secondItem="gEA-nH-hFQ" secondAttribute="trailing" constant="16" id="tcJ-Dw-cPO"/>
                     </constraints>
@@ -38,42 +47,32 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFc-vX-zaw">
-                    <rect key="frame" x="96" y="16" width="134" height="24.666666666666671"/>
+                    <rect key="frame" x="96" y="15.999999999999998" width="134" height="20.333333333333329"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description Description Description Description Description Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-4d-M1D">
-                    <rect key="frame" x="96" y="44.666666666666657" width="281" height="57.333333333333343"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" misplaced="YES" text="Description Description Description Description Description Description Description Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-4d-M1D">
+                    <rect key="frame" x="96" y="45" width="241" height="57"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="GV5-0S-6eh">
-                    <rect key="frame" x="353" y="16" width="24" height="24"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="24" id="hVM-Ec-d0H"/>
-                        <constraint firstAttribute="width" constant="24" id="nhC-Sf-aok"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="J9U-4d-M1D" secondAttribute="trailing" constant="16" id="1N5-g7-jeE"/>
                 <constraint firstAttribute="bottom" secondItem="J9U-4d-M1D" secondAttribute="bottom" constant="12" id="95i-wB-g2P"/>
-                <constraint firstItem="J9U-4d-M1D" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="F67-SX-Bxm"/>
                 <constraint firstAttribute="trailing" secondItem="wfO-bv-yN6" secondAttribute="trailing" id="NhP-LU-7vv"/>
                 <constraint firstItem="TFc-vX-zaw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="UBk-dE-VHb"/>
                 <constraint firstAttribute="bottom" secondItem="wfO-bv-yN6" secondAttribute="bottom" id="VnF-7B-OSn"/>
                 <constraint firstItem="n04-WE-ucb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="WSf-lh-VkB"/>
                 <constraint firstItem="J9U-4d-M1D" firstAttribute="top" secondItem="TFc-vX-zaw" secondAttribute="bottom" constant="4" id="bOo-bq-SYT"/>
-                <constraint firstItem="J9U-4d-M1D" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="fGW-e7-w8U"/>
-                <constraint firstItem="GV5-0S-6eh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="g3t-9I-9h4"/>
                 <constraint firstItem="n04-WE-ucb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kOY-z8-GJh"/>
+                <constraint firstItem="J9U-4d-M1D" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="lRb-H7-gg0"/>
                 <constraint firstItem="wfO-bv-yN6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oH4-Gn-wWp"/>
                 <constraint firstItem="TFc-vX-zaw" firstAttribute="leading" secondItem="n04-WE-ucb" secondAttribute="trailing" constant="16" id="rzs-Qv-cAP"/>
-                <constraint firstAttribute="trailing" secondItem="GV5-0S-6eh" secondAttribute="trailing" constant="16" id="uGD-A5-tN5"/>
                 <constraint firstItem="wfO-bv-yN6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wdq-QF-kjN"/>
+                <constraint firstAttribute="trailing" secondItem="J9U-4d-M1D" secondAttribute="trailing" constant="56" id="ysn-oZ-pgG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
