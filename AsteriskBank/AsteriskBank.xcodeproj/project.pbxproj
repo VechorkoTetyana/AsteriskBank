@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B8AB0BB32BB34E9E00588FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */; };
 		B8AB0BB52BB34E9E00588FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */; };
-		B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */; };
+		B8AB0BB72BB34E9E00588FC1 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BB62BB34E9E00588FC1 /* ProductsVC.swift */; };
 		B8AB0BBA2BB34E9E00588FC1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BB92BB34E9E00588FC1 /* Base */; };
 		B8AB0BBC2BB34EA000588FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */; };
 		B8AB0BBF2BB34EA000588FC1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BBE2BB34EA000588FC1 /* Base */; };
@@ -18,6 +18,9 @@
 		B8AB0BCD2BB3B90300588FC1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */; };
 		B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */; };
 		B8AB0BD32BC3EE4400588FC1 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B8AB0BD22BC3EE4400588FC1 /* products.json */; };
+		B8C34E932BD7129D00450308 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C34E922BD7129D00450308 /* ProductsViewModel.swift */; };
+		B8C34E992BD7293E00450308 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8C34E982BD7293E00450308 /* Alamofire */; };
+		B8C34E9B2BD7C38C00450308 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C34E9A2BD7C38C00450308 /* ProductsRepository.swift */; };
 		B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */; };
 		B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */; };
 		B8FAF0242BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FAF01F2BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf */; };
@@ -32,7 +35,7 @@
 		B8AB0BAF2BB34E9E00588FC1 /* AsteriskBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsteriskBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8AB0BB62BB34E9E00588FC1 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		B8AB0BB92BB34E9E00588FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8AB0BBB2BB34EA000588FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AB0BBE2BB34EA000588FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,8 @@
 		B8AB0BCC2BB3B90300588FC1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsLoader.swift; sourceTree = "<group>"; };
 		B8AB0BD22BC3EE4400588FC1 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		B8C34E922BD7129D00450308 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		B8C34E9A2BD7C38C00450308 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
 		B8FAEFF62BC7EDDD00AC04DB /* ProductCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryViewModel.swift; sourceTree = "<group>"; };
 		B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneredView.swift; sourceTree = "<group>"; };
 		B8FAF01F2BCF19F100AC04DB /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SpaceGrotesk-Bold.ttf"; path = "../../../../Assets/Space_Grotesk/static/SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C34E992BD7293E00450308 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,18 +88,16 @@
 		B8AB0BB12BB34E9E00588FC1 /* AsteriskBank */ = {
 			isa = PBXGroup;
 			children = (
+				B8C34E962BD713B900450308 /* Service */,
+				B8C34E942BD7136D00450308 /* Util */,
+				B8C34E912BD7127E00450308 /* Products */,
 				B8AB0BC02BB34EA000588FC1 /* Info.plist */,
 				B8FAF01D2BCF194400AC04DB /* Resources */,
-				B8FAEFF82BC7EE5C00AC04DB /* Model */,
 				B8AB0BD22BC3EE4400588FC1 /* products.json */,
-				B8AB0BC62BB3A61F00588FC1 /* ProductCell */,
 				B8AB0BB22BB34E9E00588FC1 /* AppDelegate.swift */,
 				B8AB0BB42BB34E9E00588FC1 /* SceneDelegate.swift */,
-				B8AB0BB62BB34E9E00588FC1 /* ViewController.swift */,
 				B8AB0BB82BB34E9E00588FC1 /* Main.storyboard */,
 				B8AB0BBD2BB34EA000588FC1 /* LaunchScreen.storyboard */,
-				B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */,
-				B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */,
 				B8FAF0292BCF245500AC04DB /* ProductDetailsVC.swift */,
 			);
 			path = AsteriskBank;
@@ -106,6 +110,42 @@
 				B8AB0BCA2BB3A78300588FC1 /* ProductTableViewCell.swift */,
 			);
 			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		B8C34E912BD7127E00450308 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAEFF82BC7EE5C00AC04DB /* Model */,
+				B8AB0BC62BB3A61F00588FC1 /* ProductCell */,
+				B8AB0BB62BB34E9E00588FC1 /* ProductsVC.swift */,
+				B8C34E922BD7129D00450308 /* ProductsViewModel.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		B8C34E942BD7136D00450308 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B8C34E952BD7138500450308 /* UIView */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B8C34E952BD7138500450308 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B8FAEFFB2BCE8BFC00AC04DB /* CorneredView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B8C34E962BD713B900450308 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B8AB0BD02BBB500400588FC1 /* ProductsLoader.swift */,
+				B8C34E9A2BD7C38C00450308 /* ProductsRepository.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B8FAEFF82BC7EE5C00AC04DB /* Model */ = {
@@ -154,6 +194,9 @@
 			dependencies = (
 			);
 			name = AsteriskBank;
+			packageProductDependencies = (
+				B8C34E982BD7293E00450308 /* Alamofire */,
+			);
 			productName = AsteriskBank;
 			productReference = B8AB0BAF2BB34E9E00588FC1 /* AsteriskBank.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +225,9 @@
 				Base,
 			);
 			mainGroup = B8AB0BA62BB34E9E00588FC1;
+			packageReferences = (
+				B8C34E972BD7293E00450308 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B8AB0BB02BB34E9E00588FC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8AB0BB72BB34E9E00588FC1 /* ViewController.swift in Sources */,
+				B8AB0BB72BB34E9E00588FC1 /* ProductsVC.swift in Sources */,
 				B8FAEFF72BC7EDDD00AC04DB /* ProductCategoryViewModel.swift in Sources */,
 				B8FAF02A2BCF245500AC04DB /* ProductDetailsVC.swift in Sources */,
 				B8FAEFFC2BCE8BFC00AC04DB /* CorneredView.swift in Sources */,
@@ -224,7 +270,9 @@
 				B8AB0BD12BBB500400588FC1 /* ProductsLoader.swift in Sources */,
 				B8AB0BB32BB34E9E00588FC1 /* AppDelegate.swift in Sources */,
 				B8AB0BB52BB34E9E00588FC1 /* SceneDelegate.swift in Sources */,
+				B8C34E932BD7129D00450308 /* ProductsViewModel.swift in Sources */,
 				B8AB0BCD2BB3B90300588FC1 /* ProductViewModel.swift in Sources */,
+				B8C34E9B2BD7C38C00450308 /* ProductsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +493,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8C34E972BD7293E00450308 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8C34E982BD7293E00450308 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8C34E972BD7293E00450308 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8AB0BA72BB34E9E00588FC1 /* Project object */;
 }
